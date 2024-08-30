@@ -178,3 +178,33 @@ body {
     font-family: "Bai Jamjuree";
     text-align: center;
 }
+
+.conteudo-chamada{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#chamada-margin{
+    margin-top: 10em;
+}
+
+.conteudo-chamada-frase{
+    color: #fefefe;
+    font-family: monospace;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #00bdff;
+    padding-left: 10px;
+    border-radius: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.conteudo-chamada-imagem{
+    margin-left: 30px;
+
+}
