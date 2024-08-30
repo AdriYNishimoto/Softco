@@ -230,7 +230,7 @@ body {
 }
 
 .container {
-    padding: 100px;
+    padding: 10rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
