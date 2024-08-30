@@ -10,9 +10,152 @@
     <title>Softco</title>
 </head>
 <body>
-    <header>
-        <iframe class="nav" src="/pages/nav-adm/nav.html" frameborder="0"></iframe>
-    </header>
+    <nav class="navegacao">
+
+
+        <div class="btn-menu-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+        <div class="logo">
+            <div class="BackLogo">
+                <img src="/img/SoftCoLogo.png" alt="Logo SoftCo" width="35px" height="35px"></img>
+            </div>
+            <h1>softco</h1>
+        </div>
+        <div class="perfil-area">
+            <div class="notificacao">
+                <i class="bi bi-bell"></i>
+            </div>
+            <div class="perfil" id="perfil">
+                <div class="inicial-circulo">AN</div>
+                <span class="nome-usuario">Adriano Nishimoto</span>
+                <i class="bi bi-chevron-down" id="btn-perfil"></i>
+    
+                <!-- Dropdown de opções -->
+                <div class="dropdown" id="dropdown">
+                    <ul>
+                        <li><a href="/pages/adm/perfil/perfil.html">Meu Perfil</a></li>
+                        <li><a href="/pages/adm/config/config.html">Configurações</a></li>
+                        <li><a href="/index.html">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <nav class="nav-lista">
+        <ul>
+            <li class="item-menu" id="selecionado">
+                <a href="/pages/adm/dashboard/dash.html">
+                    <span class="icon"><i class="bi bi-columns-gap"></i></i></span>
+                    <span class="txt-link">DASHBOARD</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="/pages/adm/contato/contato.html">
+                    <span class="icon"><i class="bi bi-archive"></i></span>
+                    <span class="txt-link">CONTATO</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="/pages/adm/tickets/tickets.html">
+                    <span class="icon"><i class="bi bi-ticket"></i></span>
+                    <span class="txt-link">TICKETS</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="/pages/adm/analise/analise.html">
+                    <span class="icon"><i class="bi bi-clipboard-data"></i></span>
+                    <span class="txt-link">ANÁLISE</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="/pages/adm/chat/chat.html">
+                    <span class="icon"><i class="bi bi-chat-square-text"></i></span>
+                    <span class="txt-link">CHAT</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="/pages/adm/config/config.html">
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="txt-link">CONFIGURAÇÕES</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <section>
+        <div class="container">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-journal-check icon"></i>
+                        <span>Total Tickets</span>
+                    </div>
+                    <div class="card-body">
+                        <h2>2593</h2>
+                        <div class="ticket-list">
+                            <h3>Lista de Tickets</h3>
+                            <ul>
+                                <li>
+                                    <i class="bi bi-ticket-detailed"></i> 
+                                    Senha não funciona 
+                                    <span class="status pendente">PENDENTE</span>
+                                    <span class="date">29 JUL, 2024</span>
+                                </li>
+                                <!-- Repita este bloco <li> para mais tickets -->
+                            </ul>
+                            <a href="/pages/adm/tickets/tickets.html" class="ver-mais">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-envelope icon"></i>
+                        <span>Total Contato</span>
+                    </div>
+                    <div class="card-body">
+                        <h2>1500</h2>
+                        <a href="#" class="ver-mais">Ver mais</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-graph-up-arrow icon"></i>
+                        <span>Análise total</span>
+                    </div>
+                    <div class="card-body">
+                        <h2>504</h2>
+                        <div class="ticket-list">
+                            <h3>Lista de Análise</h3>
+                            <ul>
+                                <li>
+                                    <i class="bi bi-ticket-detailed"></i> 
+                                    Senha não funciona 
+                                    <span class="status aberto">ABERTO</span>
+                                    <span class="date">29 JUL, 2024</span>
+                                </li>
+                                <!-- Repita este bloco <li> para mais análises -->
+                            </ul>
+                            <a href="#" class="ver-mais">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card large-card">
+                <h3>Relatório e Análise dos Tickets</h3>
+                <div id="chart-container">
+                    <!-- Gráfico irá aqui -->
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="dash.js"></script>
+<script src="nav.js"></script>
+<script src="nav-exp.js"></script>
+<script src="drop.js"></script>
 </html>

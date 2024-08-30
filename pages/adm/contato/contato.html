@@ -10,9 +10,83 @@
     <title>Softco</title>
 </head>
 <body>
-    <header>
-        <iframe class="nav" src="/pages/nav-adm/nav.html" frameborder="0"></iframe>
-    </header>
+    <nav class="navegacao">
+
+
+        <div class="btn-menu-expandir">
+            <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+        <div class="logo">
+            <div class="BackLogo">
+                <img src="/img/SoftCoLogo.png" alt="Logo SoftCo" width="35px" height="35px"></img>
+            </div>
+            <h1>softco</h1>
+        </div>
+        <div class="perfil-area">
+            <div class="notificacao">
+                <i class="bi bi-bell"></i>
+            </div>
+            <div class="perfil" id="perfil">
+                <div class="inicial-circulo">AN</div>
+                <span class="nome-usuario">Adriano Nishimoto</span>
+                <i class="bi bi-chevron-down" id="btn-perfil"></i>
+    
+                <!-- Dropdown de opções -->
+                <div class="dropdown" id="dropdown">
+                    <ul>
+                        <li><a href="/pages/adm/perfil/perfil.html">Meu Perfil</a></li>
+                        <li><a href="/pages/adm/config/config.html">Configurações</a></li>
+                        <li><a href="/index.html">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <nav class="nav-lista">
+        <ul>
+            <li class="item-menu">
+                <a href="/pages/adm/dashboard/dash.html">
+                    <span class="icon"><i class="bi bi-columns-gap"></i></i></span>
+                    <span class="txt-link">DASHBOARD</span>
+                </a>
+            </li>
+            <li class="item-menu" id="selecionado">
+                <a href="/pages/adm/contato/contato.html">
+                    <span class="icon"><i class="bi bi-archive"></i></span>
+                    <span class="txt-link">CONTATO</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="/pages/adm/tickets/tickets.html">
+                    <span class="icon"><i class="bi bi-ticket"></i></span>
+                    <span class="txt-link">TICKETS</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="/pages/adm/analise/analise.html">
+                    <span class="icon"><i class="bi bi-clipboard-data"></i></span>
+                    <span class="txt-link">ANÁLISE</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="/pages/adm/chat/chat.html">
+                    <span class="icon"><i class="bi bi-chat-square-text"></i></span>
+                    <span class="txt-link">CHAT</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="/pages/adm/config/config.html">
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="txt-link">CONFIGURAÇÕES</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
 </body>
 <script src="contato.js"></script>
+<script src="nav.js"></script>
+<script src="nav-exp.js"></script>
+<script src="drop.js"></script>
 </html>
