@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: #f7f7f7;
+}
+
 body::-webkit-scrollbar {
     width: 5px;               /* width of the entire scrollbar */
   }
@@ -222,3 +226,60 @@ ul li.item-menu a .icon > i{
     font-size: 25px;
 }
 
+/* Container dos contatos */
+.container-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 100px; /* Ajuste para evitar sobreposição com o menu superior */
+}
+
+/* Cada cartão de contato */
+.card-contato {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: calc(100% - 40px); /* Para garantir o espaçamento interno */
+    max-width: 300px; /* Tamanho máximo de cada cartão */
+}
+
+/* Conteúdo do contato */
+.content-contato p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111C37;
+}
+
+/* Efeito hover */
+.card-contato:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-contato {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .icon-contato {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-contato {
+        width: calc(100% - 40px);
+        max-width: none;
+    }
+}

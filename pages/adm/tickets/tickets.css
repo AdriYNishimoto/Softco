@@ -220,5 +220,89 @@ ul li.item-menu a .txt-link{
 
 ul li.item-menu a .icon > i{
     font-size: 25px;
+    color: #fff;
 }
 
+.container-tickets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10rem;
+    justify-content: center;
+}
+
+.ticket-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+
+.ticket-card:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 30px;
+    color: #7d8899;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.aberto {
+    background-color: #35DCA8;
+}
+
+.pendente {
+    background-color: #F1C40F;
+}
+
+.resolvido {
+    background-color: #F16565;
+}
+
+.ticket-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111C37;
+}
+
+.details {
+    font-size: 14px;
+    color: #7d8899;
+}
+
+.details span {
+    font-weight: bold;
+    color: #111C37;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-tickets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ticket-card {
+        width: 100%;
+    }
+}

@@ -19,6 +19,7 @@ body::-webkit-scrollbar {
     background-color: #00bdff;    /* color of the scroll thumb */
     border-radius: 0 20px;      /* roundness of the scroll thumb */
   }
+  
 
 .navegacao{
     width: 100%;
@@ -34,7 +35,7 @@ body::-webkit-scrollbar {
 }
 
 .logo {
-    display: flex;
+    display:flex;
     align-items: center;
     padding-left: 30px;
 }
@@ -42,6 +43,7 @@ body::-webkit-scrollbar {
 .logo h1 {
     font-size: 30px;
     font-family: 'Nano', sans-serif;
+    padding-top: 40px;
 }
 
 .BackLogo {
@@ -222,3 +224,40 @@ ul li.item-menu a .icon > i{
     font-size: 25px;
 }
 
+.dashboard {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.chart-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-card h2 {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+canvas {
+    max-width: 100%;
+    height: 400px;
+}

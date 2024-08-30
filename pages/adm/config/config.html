@@ -84,6 +84,55 @@
         </ul>
 
     </nav>
+    <section>
+        <div class="container-config">
+            <h1>Configurações</h1>
+    
+            <!-- Seção Conta -->
+            <div class="config-section">
+                <h2>Conta</h2>
+                <div class="config-item">
+                    <label for="username">Nome de usuário:</label>
+                    <input type="text" id="username" value="Adriano Nishimoto">
+                </div>
+                <div class="config-item">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value="adriano@example.com">
+                </div>
+                <div class="config-item">
+                    <button class="btn-save">Salvar Alterações</button>
+                </div>
+            </div>
+    
+            <!-- Seção Notificações -->
+            <div class="config-section">
+                <h2>Notificações</h2>
+                <div class="config-item">
+                    <label for="email-notifications">Notificações por Email:</label>
+                    <input type="checkbox" id="email-notifications" checked>
+                </div>
+                <div class="config-item">
+                    <label for="sms-notifications">Notificações por SMS:</label>
+                    <input type="checkbox" id="sms-notifications">
+                </div>
+            </div>
+    
+            <!-- Seção Privacidade -->
+            <div class="config-section">
+                <h2>Privacidade</h2>
+                <div class="config-item">
+                    <label for="profile-visibility">Visibilidade do Perfil:</label>
+                    <select id="profile-visibility">
+                        <option value="public">Público</option>
+                        <option value="private" selected>Privado</option>
+                    </select>
+                </div>
+                <div class="config-item">
+                    <button class="btn-save">Salvar Alterações</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="config.js"></script>
 <script src="nav.js"></script>
