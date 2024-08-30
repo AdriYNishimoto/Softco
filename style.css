@@ -2,11 +2,24 @@
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000000;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #00bdff;    /* color of the scroll thumb */
+    border-radius: 0 20px;      /* roundness of the scroll thumb */
+  }
+
 body {
     margin: 0 auto;
     padding: 0;
     background-image: url("./img/Group5362.png");
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
 }
 
@@ -149,7 +162,7 @@ body {
 }
 
 .conteudo-segundo{
-    margin-top: 190px;
+    margin-top: 12.5em;
 }
 
 .conteudo-segundo-frase-escrita, .line{
@@ -160,7 +173,7 @@ body {
 .conteudo-segundo-frase-escrita h2{
     margin: 0;
     margin-top: 25px;
-    font-size: 46px;
+    font-size: 2.9em;
     color: #111C37;
     font-family: "Bai Jamjuree";
     text-align: center;
