@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../img/SoftCoFavicon.png">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="esquecisenha.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
     </style>
@@ -28,21 +28,18 @@
 
             <form class="form" onSubmit={handleLogin}>
                 <div class="inputGroup">
-                    <label class="label">Email</label>
+                    <label class="label">Recuperação de senha</label>
+                    <p class="frase-label">Um email será enviado para sua caixa postal!</p>
                     <input type="email" class="input" required />
                 </div>
-                <div class="inputGroup">
-                    <label class="label">Senha</label>
-                    <input type="password" class="input" required />
-                </div>
                 <div class="button">
-                    <button type="submit" class="button-entrar"><a href="/pages/adm/dashboard/dash.html">ENTRAR</a></button>
+                    <button type="submit" class="button-enviar"><a href="/pages/adm/dashboard/dash.html">ENVIAR</a></button>
                 </div>
             </form>
 
             <div class="acessos">
+                <div class="acesso-voltar"><a href="/pages/login/login.html">Voltar</a></div>
                 <div class="acesso-primeiro"><a href="/pages/cadastro/cadastro.html">Primeiro acesso</a></div>
-                <div class="acesso-esquecisenha"><a href="/pages/esquecisenha/esquecisenha.html">Esqueci minha senha</a></div>
             </div>
         </div>
 
