@@ -21,7 +21,9 @@ body {
     background-image: url("./img/Group5362.png");
     background-size: auto;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
+
 
 .cabecalho {
     width: 100%;
@@ -105,7 +107,9 @@ body {
 .conteudo{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0 10rem;
+    flex-direction: column;
 }
 
 .conteudo-margin{
@@ -206,5 +210,21 @@ body {
 
 .conteudo-chamada-imagem{
     margin-left: 30px;
+}
 
+.conteudo-pitch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #111C37;
+    color: #fefefe;
+    height: auto;
+    padding: 0 2rem 2rem 2rem;
+    width: 100vw;
+}
+
+.conteudo-vazio{
+    height: 50px;
+    background-color: #fefefe;
 }
