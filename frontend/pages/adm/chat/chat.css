@@ -339,7 +339,6 @@ ul li.item-menu a .icon > i{
 .message {
     max-width: 60%;
     padding: 10px 15px;
-    border-radius: 20px;
     position: relative;
 }
 
@@ -347,11 +346,15 @@ ul li.item-menu a .icon > i{
     background-color: #f1f0f0;
     align-self: flex-start;
     color: black;
+    border-radius: 20px 20px 20px 0;
+
 }
 
 .message.sent {
     background-color: #1e88e5;
     align-self: flex-end;
+    border-radius: 20px 20px 0 20px;
+
 }
 
 .message span {
@@ -363,10 +366,12 @@ ul li.item-menu a .icon > i{
 }
 
 .chat-footer {
+    background: #fff;
     display: flex;
     align-items: center;
     padding: 15px;
     border-top: 1px solid #ddd;
+    bottom: 0;
 }
 
 .chat-footer input {
